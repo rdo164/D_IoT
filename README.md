@@ -213,8 +213,9 @@ index: "filebeat-%{+yyyy-MM-dd}"
 | | | |
 |--- | --- | --- |
 | Postman | JSON| 
-| ![](./images/postman.png)   |  ![](./images/json.png)   |
-
+| ![](./images/postman.png)   |  ![](./images/json.png)   | 
+|        |             | 
+|         |             | 
 Si no se aprecian las imágenes: Este es la parte del JSON en Postman:
 ```
        "_index": "filebeat-7.17.0-2024.02.21-000001",
@@ -260,7 +261,7 @@ Y este el objeto JSON:
 # PROBLEMAS
 - A la hora de crear los contenedor de manera individual no podía abrir otro terminal y hacer la llamada para comprobarlo. Era porque no lo estaba ejecutando en 2º plano.
 
-- Version antigua por lo que con la información que estaba empleando no me aparecía la version de **create Index pattern**
+- Version antigua por lo que con la información de un tutorial que estaba empleando no me aparecía la version de **create Index pattern**
 
 - Attaching to d_iot_filebeat_1, d_iot_elasticsearch_1, d_iot_kibana_1
 filebeat_1       | Exiting: error loading config file: config file ("filebeat.yml") can only be writable 
