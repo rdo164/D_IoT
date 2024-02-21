@@ -1,0 +1,30 @@
+version: '3'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.0
+    ports:
+      - "9200:9200" # Host port:docker port.
+    environment:
+      - discovery.type=single-node  # Runnea el docker como un single-node
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.17.0
+    ports:
+      - "5601:5601"  
+    depends_on: 
+      - elasticsearch # se inicia después de elastic-search
+
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:7.17.0
+    #ports: 
+    #  - "5601:5601"
+    command: filebeat -e -strict.perms=false # ejecutar sin problemas de admnistrados
+
+    # monto filebeat y los logs 
+    volumes:
+      - ./filebeat.yml:/usr/share/filebeat/filebeat.yml:rw
+      - ./logs/dummy_logs.json:/usr/share/filebeat/dummy_logs.json:rw
+      - /var/lib/docker/containers # recolección de logs
+    
+
+  

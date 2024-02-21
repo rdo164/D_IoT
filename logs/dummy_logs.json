@@ -1,0 +1,10 @@
+{"@timestamp": "2024-02-20T19:06:24.906987", "log.level": "DEBUG", "message": "Sample log message - 85"}
+{"@timestamp": "2024-02-20T19:06:25.077468", "log.level": "DEBUG", "message": "Sample log message - 69"}
+{"@timestamp": "2024-02-20T19:06:25.681546", "log.level": "ERROR", "message": "Sample log message - 44"}
+{"@timestamp": "2024-02-20T19:06:25.830065", "log.level": "INFO", "message": "Sample log message - 53"}
+{"@timestamp": "2024-02-20T19:06:26.403001", "log.level": "DEBUG", "message": "Sample log message - 14"}
+{"@timestamp": "2024-02-20T19:06:26.895286", "log.level": "ERROR", "message": "Sample log message - 11"}
+{"@timestamp": "2024-02-20T19:06:27.343714", "log.level": "DEBUG", "message": "Sample log message - 64"}
+{"@timestamp": "2024-02-20T19:06:27.910559", "log.level": "INFO", "message": "Sample log message - 13"}
+{"@timestamp": "2024-02-20T19:06:28.337817", "log.level": "DEBUG", "message": "Sample log message - 77"}
+{"@timestamp": "2024-02-20T19:06:28.824028", "log.level": "DEBUG", "message": "Sample log message - 60"}

@@ -1,0 +1,28 @@
+# filebeat.inputs:
+# - type: docker
+#  containers.ids:
+#    - '*'
+# output.elasticsearch:
+#  hosts: ["elasticsearch:9200"]
+
+
+# PASO 3:
+
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /usr/share/filebeat/*json # path de donde se va a leer la información
+    
+  # configuraciones para comprobar si el formato de JSON es incorrecto  
+  json.keys_under_root: true 
+  json.add_error_key: true
+
+output.elasticsearch:
+  hosts: ["elasticsearch:9200"]  
+  index: "filebeat-%{+yyyy-MM-dd}" # formato del output
+
+setup.template.name: "filebeat" 
+setup.template.pattern: "filebeat-*" # índice
+
+
