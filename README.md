@@ -213,9 +213,8 @@ index: "filebeat-%{+yyyy-MM-dd}"
 | | | |
 |--- | --- | --- |
 | Postman | JSON| 
-| ![](./images/postman.png)   |  ![](./images/json.png)   | 
-|        |             | 
-|         |             | 
+| ![](./images/postman.png)   |  ![](./images/json.png)   |
+
 Si no se aprecian las imágenes: Este es la parte del JSON en Postman:
 ```
        "_index": "filebeat-7.17.0-2024.02.21-000001",
